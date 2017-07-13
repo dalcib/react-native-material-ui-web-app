@@ -1,0 +1,21 @@
+{
+  "name": "react-native-material-ui-web-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-app-rewired": "^1.0.8",
+    "react-dom": "^15.6.1",
+    "react-native-material-ui": "^1.12.0",
+    "react-native-web": "0.0.112",
+    "react-router-dom": "^4.1.1",
+    "react-scripts": "1.0.10",
+    "react-sidebar": "^2.3.2"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
