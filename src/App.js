@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { NativeModules, View } from 'react-native'
 
 import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { createBrowserHistory } from 'history'
+
 import { ThemeProvider, COLOR } from 'react-native-material-ui'
 
 import Home from './Home'
@@ -20,8 +22,12 @@ import IconToggle from './Components/IconToggle'
 import List from './Components/List'
 import RadioButton from './Components/RadioButton'
 import Toolbar from './Components/Toolbars'
+import Snackbar from './Components/Snackbar'
+import TextInput from './Components/TextInput'
 
 import AppDrawer from './AppDrawer'
+
+const history = createBrowserHistory()
 
 const UIManager = NativeModules.UIManager
 
@@ -57,17 +63,18 @@ class App extends Component {
   }
   render() {
     return (
-      <Router>
+      <Router history={history}>
         <ThemeProvider uiTheme={uiTheme}>
           <AppDrawer open={this.state.open}>
             <View>
               <Route
                 exact
                 path="/"
-                render={() =>
+                render={props =>
                   <Home
                     isOpen={this.state.open}
                     toogleOpen={this.toggleOpen.bind(this)}
+                    {...props}
                   />}
               />
               <Route path="/actionButton" component={ActionButton} />
@@ -90,7 +97,9 @@ class App extends Component {
               <Route path="/iconToggle" component={IconToggle} />
               <Route path="/list" component={List} />
               <Route path="/radioButton" component={RadioButton} />
+              <Route path="/textInput" component={TextInput} />
               <Route path="/toolbar" component={Toolbar} />
+              <Route path="/snackbar" component={Snackbar} />
             </View>
           </AppDrawer>
         </ThemeProvider>

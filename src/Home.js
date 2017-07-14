@@ -74,6 +74,7 @@ class Home extends Component {
       })
     }
   }
+
   show = () => {
     Animated.timing(this.state.moveAnimated, {
       toValue: 0,
@@ -82,6 +83,7 @@ class Home extends Component {
       useNativeDriver: Platform.OS === 'android',
     }).start()
   }
+
   hide = () => {
     Animated.timing(this.state.moveAnimated, {
       toValue: 56, // because the bottom navigation bar has height set to 56
@@ -161,6 +163,8 @@ class Home extends Component {
           {this.renderItem('Icon toggles', '/iconToggle')}
           {this.renderItem('List items', '/list')}
           {this.renderItem('Radio buttons', '/radioButton')}
+          {this.renderItem('Snackbar', '/snackbar')}
+          {this.renderItem('TextInput', '/textInput')}
           {this.renderItem('Toolbars', '/toolbar')}
         </ScrollView>
         <ActionButton

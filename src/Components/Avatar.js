@@ -19,7 +19,7 @@ class AvatarSpec extends Component {
         <Toolbar
           leftElement="arrow-back"
           onLeftElementPress={() => this.props.history.goBack()}
-          centerElement={this.props.history.title}
+          centerElement={'Avatars'}
         />
         <Subheader text="Avatars with text" />
         <View style={styles.avatarContainer}>

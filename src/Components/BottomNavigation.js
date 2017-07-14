@@ -1,10 +1,17 @@
 import React, { Component } from 'react'
-import { View } from 'react-native'
+import { View, StyleSheet } from 'react-native'
 import Container from './Container'
 
 import { Toolbar, BottomNavigation, Icon } from 'react-native-material-ui'
 
 const propTypes = {}
+
+const style = StyleSheet.create({
+  container: {
+    flexDirection: 'column',
+    flex: 1,
+  },
+})
 
 class BottomNavigationSpec extends Component {
   constructor(props) {
@@ -12,10 +19,10 @@ class BottomNavigationSpec extends Component {
 
     this.state = { active: 'today' }
   }
-  componentWillUpdate
+
   render() {
     return (
-      <Container>
+      <Container style={style.container}>
         <Toolbar
           leftElement="arrow-back"
           onLeftElementPress={() => this.props.history.goBack()}

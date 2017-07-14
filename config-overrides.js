@@ -11,7 +11,5 @@ module.exports = function override(config, env) {
   }
   config.module.rules.push(babelLoader)
 
-  console.log(config.module.rules[0])
-
   return config
 }

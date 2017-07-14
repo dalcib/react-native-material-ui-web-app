@@ -1,9 +1,8 @@
 import React from 'react'
 import Sidebar from 'react-sidebar'
-import { Link } from 'react-router-dom'
+import { withRouter } from 'react-router-dom'
 import Drawer from './Components/Drawer'
 
-import { Text } from 'react-native'
 /* eslint-disable */
 const mql = window.matchMedia(`(min-width: 800px)`)
 
@@ -65,4 +64,4 @@ class AppDrawer extends React.Component {
   }
 }
 
-export default AppDrawer
+export default withRouter(AppDrawer)
