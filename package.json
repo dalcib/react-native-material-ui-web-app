@@ -6,7 +6,7 @@
     "react": "^15.6.1",
     "react-app-rewired": "^1.0.8",
     "react-dom": "^15.6.1",
-    "react-native-material-ui": "^1.12.0",
+    "react-native-material-ui": "git://github.com/dalcib/react-native-material-ui.git#web",
     "react-native-md-textinput": "^2.0.4",
     "react-native-web": "0.0.112",
     "react-router-dom": "^4.1.1",
