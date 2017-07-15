@@ -8,7 +8,7 @@ import {
 } from 'react-native'
 import React, { Component } from 'react'
 
-import { ListItem, Subheader, Toolbar } from 'react-native-material-ui/src'
+import { ListItem, Subheader, Toolbar } from 'react-native-material-ui'
 
 const styles = StyleSheet.create({
   container: {
@@ -23,8 +23,8 @@ const contextTypes = {
 
 class List extends Component {
   render() {
-    const { listItem } = this.context.uiTheme
-    const flattenPrimaryText = StyleSheet.flatten(listItem.primaryText)
+    //const { listItem } = this.context.uiTheme
+    //const flattenPrimaryText = StyleSheet.flatten(listItem.primaryText)
 
     return (
       <View style={styles.container}>
@@ -147,7 +147,7 @@ class List extends Component {
                 'Pellentesque commodo ultrices diam. Praesent in ipsum.',
             }}
             style={{
-              secondaryText: { color: flattenPrimaryText.color },
+              //secondaryText: { color: flattenPrimaryText.color },
             }}
           />
           <Subheader text="Dynamic" />

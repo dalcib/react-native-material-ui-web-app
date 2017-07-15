@@ -21,7 +21,6 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://dalcib.github.io/react-native-material-ui-web-app",
   "devDependencies": {
     "gh-pages": "^1.0.0"
   }
