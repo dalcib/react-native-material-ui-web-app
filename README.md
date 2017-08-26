@@ -1,4 +1,6 @@
-## Demo app with react-mative-material-ui(forked) and react-native-web
+## Demo app with react-mative-material-ui and react-native-web
+
+This app uses create-react-app with react-app-rewired to modify webpack
 
 ![screen1.png](/docs/screen1.png)
 Update Readme
