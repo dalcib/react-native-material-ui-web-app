@@ -17,13 +17,19 @@ const propTypes = {}
 
 class DrawerSpec extends Component {
   render() {
+    const {history, onClose} = this.props
+
     return (
       <Container>
         <Toolbar
           leftElement="arrow-back"
           onLeftElementPress={() => {
-            if (this.props.history.length > 0) {
-              this.props.history.goBack()
+            if (history && history.length) {
+              history.goBack()
+            }
+            else
+            {
+              onClose()
             }
           }}
           centerElement={'Drawer'}

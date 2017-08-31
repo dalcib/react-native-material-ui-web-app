@@ -53,7 +53,7 @@ class AppDrawer extends React.Component {
 
     return (
       <Sidebar
-        sidebar={<Drawer />}
+        sidebar={<Drawer onClose={this.onSetSidebarOpen}/>}
         open={this.state.sidebarOpen}
         docked={this.state.sidebarDocked}
         onSetOpen={this.onSetSidebarOpen}
