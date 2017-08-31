@@ -8,6 +8,7 @@
     "react-dom": "^15.6.1",
     "react-native-material-ui": "1.13.0",
     "react-native-md-textinput": "^2.0.4",
+    "react-native-vector-icons": "^4.3.0",
     "react-native-web": "0.0.112",
     "react-router-dom": "^4.1.1",
     "react-scripts": "1.0.10",
@@ -22,6 +23,7 @@
     "deploy": "gh-pages -d build"
   },
   "devDependencies": {
+    "babel-preset-react-native": "^3.0.2",
     "gh-pages": "^1.0.0"
   }
 }
