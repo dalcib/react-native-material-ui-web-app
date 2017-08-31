@@ -23,7 +23,9 @@
     "deploy": "gh-pages -d build"
   },
   "devDependencies": {
+    "babel-loader": "^7.1.2",
     "babel-preset-react-native": "^3.0.2",
-    "gh-pages": "^1.0.0"
+    "gh-pages": "^1.0.0",
+    "webpack": "^3.5.5"
   }
 }
