@@ -2,17 +2,6 @@
   "name": "react-native-material-ui-web-app",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "react": "^15.6.1",
-    "react-app-rewired": "^1.0.8",
-    "react-dom": "^15.6.1",
-    "react-native-material-ui": "1.13.0",
-    "react-native-md-textinput": "^2.0.4",
-    "react-native-web": "0.0.112",
-    "react-router-dom": "^4.1.1",
-    "react-scripts": "1.0.10",
-    "react-sidebar": "^2.3.2"
-  },
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
@@ -21,7 +10,22 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-app-rewired": "^1.2.4",
+    "react-dom": "^15.6.1",
+    "react-native-material-ui": "1.13.0",
+    "react-native-md-textinput": "^2.0.4",
+    "react-native-vector-icons": "^4.3.0",
+    "react-native-web": "0.0.120",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.12",
+    "react-sidebar": "^2.3.2"
+  },
   "devDependencies": {
-    "gh-pages": "^1.0.0"
+    "babel-loader": "^7.1.2",
+    "babel-preset-react-native": "^3.0.2",
+    "gh-pages": "^1.0.0",
+    "webpack": "^3.5.5"
   }
 }
