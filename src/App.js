@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
-import { NativeModules, View } from 'react-native'
+import { View } from 'react-native'
+// eslint-disable-next-line
+import { NativeModules } from 'react-native'
 
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
@@ -29,7 +31,7 @@ import AppDrawer from './AppDrawer'
 
 const history = createBrowserHistory()
 
-const UIManager = NativeModules.UIManager
+//const UIManager = NativeModules.UIManager
 
 const uiTheme = {
   palette: {
@@ -70,12 +72,13 @@ class App extends Component {
               <Route
                 exact
                 path="/"
-                render={props =>
+                render={props => (
                   <Home
                     isOpen={this.state.open}
                     toogleOpen={this.toggleOpen.bind(this)}
                     {...props}
-                  />}
+                  />
+                )}
               />
               <Route path="/actionButton" component={ActionButton} />
               <Route

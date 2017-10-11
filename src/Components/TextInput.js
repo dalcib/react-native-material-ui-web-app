@@ -1,9 +1,9 @@
-import { StyleSheet, ScrollView } from 'react-native'
+import { StyleSheet, ScrollView, TextInput } from 'react-native'
 import React, { Component } from 'react'
 
 import { Toolbar, Subheader } from 'react-native-material-ui'
 //import { TextField as TextInput } from 'react-native-material-textfield'
-import TextField from 'react-native-md-textinput'
+//import TextField from 'react-native-md-textinput'
 
 import Container from './Container'
 
@@ -170,7 +170,7 @@ class TextFieldSpec extends Component {
         />
         <ScrollView style={styles.scroll}>
           <Subheader text="react-native-md-textinput" />
-          <TextField
+          <TextInput
             label={'Name'}
             highlightColor={'#00BCD4'}
             onChangeText={text => {
@@ -178,45 +178,6 @@ class TextFieldSpec extends Component {
             }}
             value={'Jane'}
             dense={true}
-          />
-          <TextField
-            label={'Address'}
-            highlightColor={'#FF5722'}
-            onChangeText={text => {
-              this.inputs.address = text
-            }}
-            returnKeyType={'next'}
-            onSubmitEditing={() => {
-              this.refs.cityInput.focus()
-            }}
-            dense={true}
-          />
-          <TextField
-            label={'City'}
-            highlightColor={'#673AB7'}
-            onChangeText={text => {
-              this.inputs.city = text
-            }}
-            ref="cityInput"
-          />
-          <TextField
-            label={'State'}
-            highlightColor={'#E91E63'}
-            onChangeText={text => {
-              this.inputs.state = text
-            }}
-            value={'WA'}
-          />
-          <TextField
-            label={'Zip'}
-            highlightColor={'#F44336'}
-            onChangeText={text => {
-              this.inputs.zip = text
-            }}
-            onBlur={() => {
-              console.log(this.inputs)
-            }}
-            keyboardType={'numeric'}
           />
         </ScrollView>
       </Container>
@@ -310,6 +271,49 @@ class TextFieldSpec extends Component {
           <View style={styles.container}>
             <Button raised primary text="submit" onPress={this.onSubmit} />/>
           </View>
+
+
+
+
+           <TextField
+            label={'Address'}
+            highlightColor={'#FF5722'}
+            onChangeText={text => {
+              this.inputs.address = text
+            }}
+            returnKeyType={'next'}
+            onSubmitEditing={() => {
+              this.refs.cityInput.focus()
+            }}
+            dense={true}
+          />
+          <TextField
+            label={'City'}
+            highlightColor={'#673AB7'}
+            onChangeText={text => {
+              this.inputs.city = text
+            }}
+            ref="cityInput"
+          />
+          <TextField
+            label={'State'}
+            highlightColor={'#E91E63'}
+            onChangeText={text => {
+              this.inputs.state = text
+            }}
+            value={'WA'}
+          />
+          <TextField
+            label={'Zip'}
+            highlightColor={'#F44336'}
+            onChangeText={text => {
+              this.inputs.zip = text
+            }}
+            onBlur={() => {
+              console.log(this.inputs)
+            }}
+            keyboardType={'numeric'}
+          />
           */
 
 TextFieldSpec.propTypes = propTypes
