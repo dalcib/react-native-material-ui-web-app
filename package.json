@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "babel-plugin-expo-web": "^0.0.13",
-    "babel-plugin-react-native-web": "^0.5.3",
+    "babel-plugin-react-native-web": "^0.6.0",
     "babel-plugin-transform-dev": "^2.0.1",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react-native": "^4.0.0",
