@@ -23,7 +23,6 @@ import List from './Components/List'
 import RadioButton from './Components/RadioButton'
 import Toolbar from './Components/Toolbars'
 import Snackbar from './Components/Snackbar'
-import TextInput from './Components/TextInput'
 
 import AppDrawer from './AppDrawer'
 
@@ -70,22 +69,17 @@ class App extends Component {
               <Route
                 exact
                 path="/"
-                render={props =>
+                render={props => (
                   <Home
                     isOpen={this.state.open}
                     toogleOpen={this.toggleOpen.bind(this)}
                     {...props}
-                  />}
+                  />
+                )}
               />
               <Route path="/actionButton" component={ActionButton} />
-              <Route
-                path="/actionButtonToolbar"
-                component={ActionButtonToolbar}
-              />
-              <Route
-                path="/actionButtonSpeedDial"
-                component={ActionButtonSpeedDial}
-              />
+              <Route path="/actionButtonToolbar" component={ActionButtonToolbar} />
+              <Route path="/actionButtonSpeedDial" component={ActionButtonSpeedDial} />
               <Route path="/avatar" component={Avatar} />
               <Route path="/badge" component={Badge} />
               <Route path="/bottomNavigation" component={BottomNavigation} />
@@ -97,7 +91,6 @@ class App extends Component {
               <Route path="/iconToggle" component={IconToggle} />
               <Route path="/list" component={List} />
               <Route path="/radioButton" component={RadioButton} />
-              <Route path="/textInput" component={TextInput} />
               <Route path="/toolbar" component={Toolbar} />
               <Route path="/snackbar" component={Snackbar} />
             </View>

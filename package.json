@@ -3,29 +3,27 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "react-app-rewired start",
-    "build": "react-app-rewired build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "start": "parcel public/index.html --no-cache",
+    "build": "parcel build src/index.js --no-cache",
+    "test": "react-scripts test --env=jsdom"
   },
   "dependencies": {
-    "react": "^15.6.1",
-    "react-app-rewired": "^1.2.4",
-    "react-dom": "^15.6.1",
+    "babel-plugin-expo-web": "^0.0.13",
+    "babel-plugin-react-native-web": "^0.5.3",
+    "babel-plugin-transform-dev": "^2.0.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react-native": "^4.0.0",
+    "parcel-plugin-react-native-web": "^0.2.12",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-native-material-textfield": "^0.12.0",
     "react-native-material-ui": "1.13.0",
-    "react-native-md-textinput": "^2.0.4",
     "react-native-vector-icons": "^4.3.0",
-    "react-native-web": "0.0.120",
+    "react-native-web": "^0.5.1",
     "react-router-dom": "^4.2.2",
-    "react-scripts": "1.0.12",
     "react-sidebar": "^2.3.2"
   },
   "devDependencies": {
-    "babel-loader": "^7.1.2",
-    "babel-preset-react-native": "^3.0.2",
-    "gh-pages": "^1.0.0",
-    "webpack": "^3.5.5"
+    "babel-core": "^6.26.0"
   }
 }
