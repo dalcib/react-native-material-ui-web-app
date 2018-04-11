@@ -1,6 +1,6 @@
-## Demo app with react-mative-material-ui and react-native-web
+## Demo app with react-mative-material-ui, react-native-web and Parcel
 
-This app uses create-react-app with react-app-rewired to modify webpack
+This app uses Parcel with [parcel-plugin-react-native-web](https://github.com/dalcib/parcel-plugin-react-native-web)
 
 ![screen1.png](/docs/screen1.png)
 Update Readme
@@ -17,4 +17,3 @@ Update Readme
 ![screen7.png](/docs/screen7.png)
 
 ![screen8.png](/docs/screen8.png)
-
