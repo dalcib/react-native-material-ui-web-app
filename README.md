@@ -1,4 +1,4 @@
-## Demo app with react-mative-material-ui, 
+## Demo app with react-mative-material-ui and react-native-web
 
 
 ![screen1.png](/docs/screen1.png)
