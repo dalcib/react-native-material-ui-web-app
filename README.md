@@ -1,6 +1,5 @@
-## Demo app with react-mative-material-ui, react-native-web and Parcel
+## Demo app with react-mative-material-ui, 
 
-This app uses Parcel with [parcel-plugin-react-native-web](https://github.com/dalcib/parcel-plugin-react-native-web)
 
 ![screen1.png](/docs/screen1.png)
 Update Readme
